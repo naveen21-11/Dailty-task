@@ -7,8 +7,8 @@ let age = 25;
 console.log("Age is:", age); // Output: 25
 
 // String
-let name = "Nithiya";
-console.log("Name is:", name); // Output: Nithiya
+let name = "Naveen";
+console.log("Name is:", name); // Output: Naveen
 
 // Boolean
 let isStudent = true;
@@ -24,10 +24,10 @@ console.log("Not defined:", notDefined); // Output: undefined
 
 // Object
 let person = {
-  firstName: "Sri",
-  lastName: "P"
+  firstName: "Naveen",
+  lastName: "V"
 };
-console.log("Person object:", person); // Output: { firstName: "Sri", lastName: "P" }
+console.log("Person object:", person); // Output: { firstName: "Naveen", lastName: "V" }
 
 // Symbol
 let sym = Symbol("id");
