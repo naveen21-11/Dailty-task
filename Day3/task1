@@ -13,6 +13,6 @@ function multiplyAllArguments() {
 function sumAllNumbers(...nums) {
   return nums.reduce((total, num) => total + num, 0);
 }
-console.log(greetUser("Ram", 25));                  // New name and age
+console.log(greetUser("naveen", 25));                  // New name and age
 console.log(multiplyAllArguments(2, 4, 6));         // New numbers to multiply
 console.log(sumAllNumbers(1, 2, 3, 4, 5));          // New numbers to sum
