@@ -1,1 +1,35 @@
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
 
+// Step 2: Input the operator
+const operator = prompt("Enter an operator (+, -, *, /, %):");
+let result;
+switch (operator) {
+    case "+":
+        result = num1 + num2;
+        break;
+
+    case "-":
+        result = num1 - num2;
+        break;
+
+    case "*":
+        result = num1 * num2;
+        break;
+
+    case "/":
+      
+      result = (num2 !== 0) ? (num1 / num2) : "Error: Cannot divide by zero";
+        break;
+
+    case "%":
+        result = (num2 !== 0) ? (num1 % num2) : "Error: Cannot perform modulo by zero";
+        break;
+
+    default:
+        result = "Invalid operator!";
+        break;
+}
+console.log("==== CALCULATOR RESULT ====");
+console.log(`${num1} ${operator} ${num2} = ${result}`);
+console.log("===========================");
