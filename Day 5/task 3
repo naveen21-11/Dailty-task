@@ -1,0 +1,23 @@
+const person1 = {
+  name: "Alice",
+  greet: function () {
+    console.log(Hello from ${this.name});
+  }
+};
+
+const person2 = {
+  name: "Bob"
+};
+person1.greet.call(person2); 
+person1.greet.apply(person2);
+const greetBob = person1.greet.bind(person2);
+greetBob(); 
+function showInfo(location, hobby) {
+  console.log(${this.name} is from ${location} and likes ${hobby});
+}
+
+const user = { name: "John" };
+showInfo.call(user, "Chennai", "Reading");
+showInfo.apply(user, ["Mumbai", "Gaming"]);
+const showJohnInfo = showInfo.bind(user, "Delhi", "Coding");
+showJohnInfo();
