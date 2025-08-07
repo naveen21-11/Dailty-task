@@ -1,0 +1,32 @@
+const fruits = ["apple", "banana", "orange"];
+const [fruit1, fruit2, fruit3] = fruits;
+console.log("Fruits:", fruit1, fruit2, fruit3);
+
+const student = {
+  name: "Naveen",
+  age: 20,
+  address: {
+    city: "Chennai",
+    pincode: 600001
+  }
+};
+
+const {
+  name,
+  address: { city, pincode }
+} = student;
+
+console.log(Name: ${name}, City: ${city}, Pincode: ${pincode});
+
+console.log("Using dot notation:", student.name);
+console.log("Using bracket notation:", student["age"]);
+
+console.log("Using for...in:");
+for (let key in student) {
+  console.log(key, ":", student[key]);
+}
+
+console.log("Using Object.entries:");
+Object.entries(student).forEach(([key, value]) => {
+  console.log(${key}: ${value});
+});
